@@ -23,22 +23,22 @@ public class ProcessDefinitionTest {
 	
 	@Test
 	public void deploy() throws FileNotFoundException{
-		//»ñÈ¡ÅäÖÃ
+		//è·å–é…ç½®
 		//InputStream in = new FileInputStream("E:\\workspace\\activiti-example\\src\\test\\resources\\test\\deploy\\leave.zip");
 		InputStream in = new FileInputStream("target\\test-classes\\test\\deploy\\leave.zip");
 		ZipInputStream zipInputStream = new ZipInputStream(in);
 		
 		DeploymentBuilder deployBuilder = processEngine.getRepositoryService().createDeployment();
-		deployBuilder.name("Çë¼ÙÁ÷³Ì");
+		deployBuilder.name("è¯·å‡æµç¨‹");
 		deployBuilder.addZipInputStream(zipInputStream);
 		Deployment deploy =deployBuilder.deploy();
 		
-		System.out.println("²¿Êğid="+deploy.getId());
+		System.out.println("éƒ¨ç½²id="+deploy.getId());
 		
 	}
 	
 	
-	/**²éÑ¯Á÷³Ì¶¨Òå*/
+	/**æŸ¥è¯¢æµç¨‹å®šä¹‰*/
 	@Test
 	public void findProcessDefinition(){
 		String deploymentId = "65001";
@@ -57,18 +57,18 @@ public class ProcessDefinitionTest {
 		
 	}
 	
-	//Æô¶¯Á÷³ÌÊµÀı
+	//å¯åŠ¨æµç¨‹å®ä¾‹
 	@Test
 	public void startProcessInstance(){
 		String processDefinitionKey = "leave";
 		ProcessInstance processInstance = processEngine.getRuntimeService().startProcessInstanceByKey(processDefinitionKey);
-		System.out.println("Á÷³ÌÊµÀıid="+processInstance.getId());
-		System.out.println("Á÷³Ì¶¨Òåid="+processInstance.getProcessDefinitionId());
+		System.out.println("æµç¨‹å®ä¾‹id="+processInstance.getId());
+		System.out.println("æµç¨‹å®šä¹‰id="+processInstance.getProcessDefinitionId());
 	}
 	
 	@Test
 	public void findPersonalTask(){
-		String assignee = "ÀîËÄ";
+		String assignee = "æå››";
 		
 		List<Task> taskList= processEngine.getTaskService()
 										.createTaskQuery()
@@ -77,27 +77,27 @@ public class ProcessDefinitionTest {
 		
 		for(int i=0,len=taskList.size();i<len;i++){
 			Task t = taskList.get(i);
-			System.out.println("ÈÎÎñID:"+t.getId());
-			System.out.println("ÈÎÎñÃû³Æ:"+t.getName());
-			System.out.println("ÈÎÎñµÄ´´½¨Ê±¼ä:"+t.getCreateTime());
-			System.out.println("ÈÎÎñµÄ°ìÀíÈË:"+t.getAssignee());
-			System.out.println("Á÷³ÌÊµÀıID£º"+t.getProcessInstanceId());
-			System.out.println("Ö´ĞĞ¶ÔÏóID:"+t.getExecutionId());
-			System.out.println("Á÷³Ì¶¨ÒåID:"+t.getProcessDefinitionId());
+			System.out.println("ä»»åŠ¡ID:"+t.getId());
+			System.out.println("ä»»åŠ¡åç§°:"+t.getName());
+			System.out.println("ä»»åŠ¡çš„åˆ›å»ºæ—¶é—´:"+t.getCreateTime());
+			System.out.println("ä»»åŠ¡çš„åŠç†äºº:"+t.getAssignee());
+			System.out.println("æµç¨‹å®ä¾‹IDï¼š"+t.getProcessInstanceId());
+			System.out.println("æ‰§è¡Œå¯¹è±¡ID:"+t.getExecutionId());
+			System.out.println("æµç¨‹å®šä¹‰ID:"+t.getProcessDefinitionId());
 		}
 		
 	}
 	
-	//Ö´ĞĞÈÎÎñ
+	//æ‰§è¡Œä»»åŠ¡
 	@Test
 	public void completePersonalTask(){
 		String taskId = "70002";
 		processEngine.getTaskService()
 					 .complete(taskId);
-		System.out.println("Íê³ÉÈÎÎñ£ºÈÎÎñID£º"+taskId);
+		System.out.println("å®Œæˆä»»åŠ¡ï¼šä»»åŠ¡IDï¼š"+taskId);
 	}
 	
-	//ÅĞ¶ÏÊÇ·ñÈÎÎñÊÇ·ñÍê³É
+	//åˆ¤æ–­æ˜¯å¦ä»»åŠ¡æ˜¯å¦å®Œæˆ
 	@Test
 	public void isProcessEnd(){
 		String processInstanceId = "67501";
@@ -106,9 +106,9 @@ public class ProcessDefinitionTest {
 									 .processInstanceId(processInstanceId)
 									 .singleResult();
 		if(instacne==null){
-			System.out.println("Á÷³ÌÒÑ¾­½áÊø");
+			System.out.println("æµç¨‹å·²ç»ç»“æŸ");
 		}else{
-			System.out.println("Á÷³ÌÃ»ÓĞ½áÊø");
+			System.out.println("æµç¨‹æ²¡æœ‰ç»“æŸ");
 		}
 		
 	}

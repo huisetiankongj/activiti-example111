@@ -12,9 +12,9 @@ import org.junit.Test;
 
 public class ActivitiDeploymentTest {
 
-	@Test
+	/*@Test
 	public void zipDeploy() throws FileNotFoundException{
-		//»ñÈ¡ÅäÖÃ
+		//è·å–é…ç½®
 		ProcessEngineConfiguration config = ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("test/activiti.cfg.xml");
 		ProcessEngine processEngine = config.buildProcessEngine();
 		
@@ -23,7 +23,7 @@ public class ActivitiDeploymentTest {
 		ZipInputStream zipInputStream = new ZipInputStream(in);
 		
 		DeploymentBuilder deployBuilder = processEngine.getRepositoryService().createDeployment();
-		deployBuilder.name("Çë¼ÙÁ÷³Ì");
+		deployBuilder.name("è¯·å‡æµç¨‹");
 		deployBuilder.addZipInputStream(zipInputStream);
 		deployBuilder.deploy();
 		
@@ -31,16 +31,16 @@ public class ActivitiDeploymentTest {
 	
 	@Test
 	public void inputSteamDeploy() throws FileNotFoundException{
-		//»ñÈ¡ÅäÖÃ
+		//è·å–é…ç½®
 		ProcessEngineConfiguration config = ProcessEngineConfiguration.createProcessEngineConfigurationFromResource("test/activiti.cfg.xml");
 		ProcessEngine processEngine = config.buildProcessEngine();
 		
 		DeploymentBuilder deployBuilder = processEngine.getRepositoryService().createDeployment();
 		deployBuilder
-			.name("Çë¼ÙÁ÷³Ì")
+			.name("è¯·å‡æµç¨‹")
 			.addClasspathResource("test\\deploy\\leave.bpmn")
 			.addClasspathResource("test\\deploy\\leave.png");
 		deployBuilder.deploy();
-	}
+	}*/
 	
 }
