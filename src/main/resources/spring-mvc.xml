@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	  xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+    
+    <description>Spring MVC Configuration</description>
+    
+    <!-- 加载配置属性文件 -->
+	<context:property-placeholder ignore-unresolvable="true" location="classpath:activiti.properties" />
+	
+	<!-- 使用Annotation自动注册Bean,只扫描@Controller -->
+	<context:component-scan base-package="com.czx" use-default-filters="false"><!-- base-package 如果多个，用“,”分隔 -->
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
+	</context:component-scan>
+	
+	<mvc:annotation-driven></mvc:annotation-driven>
+	
+	<!-- 定义视图文件解析 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="${web.view.prefix}"/>
+		<property name="suffix" value="${web.view.suffix}"/>
+	</bean>
+	
+	<!-- 上传文件拦截，设置最大上传文件大小   10M=10*1024*1024(B)=10485760 bytes -->  
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  
+		<property name="maxUploadSize" value="${web.maxUploadSize}" />  
+	</bean>
+	<!-- 计划任务配置，用 @Service @Lazy(false)标注类，用@Scheduled(cron = "0 0 2 * * ?")标注方法 -->
+    <task:executor id="executor" pool-size="10"/> <task:scheduler id="scheduler" pool-size="10"/>
+    <task:annotation-driven scheduler="scheduler" executor="executor" proxy-target-class="true"/>
+</beans>
