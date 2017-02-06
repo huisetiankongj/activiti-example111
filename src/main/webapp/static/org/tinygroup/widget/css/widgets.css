@@ -1,0 +1,1285 @@
+.widget-support-tickets .ticket {
+    padding: 0 0 11px
+}
+
+.widget-support-tickets .ticket + .ticket {
+    padding-top: 11px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.widget-support-tickets .ticket:last-child {
+    padding-bottom: 0
+}
+
+.widget-support-tickets a.ticket-title {
+    display: block;
+    font-size: 14px;
+    padding: 0 90px 0 0;
+    line-height: 20px
+}
+
+.widget-support-tickets a.ticket-title i {
+    display: inline-block;
+    font-size: 11px;
+    margin: 0 5px 0 0;
+    top: -1px;
+    position: relative;
+    text-decoration: none
+}
+
+.widget-support-tickets a.ticket-title span {
+    display: inline-block;
+    color: #aaa;
+    padding-left: 4px;
+    text-decoration: none !important
+}
+
+.widget-support-tickets .ticket-label {
+    display: block;
+    float: right;
+    font-size: 10px;
+    line-height: 18px;
+    margin: 2px 0 0;
+    padding: 0 5px;
+    position: relative
+}
+
+.widget-support-tickets .ticket-info {
+    color: #aaa;
+    font-size: 12px
+}
+
+.widget-support-tickets .ticket-info a {
+    color: #555
+}
+
+.widget-support-tickets .ticket-info a:hover {
+    color: #888
+}
+
+.panel .widget-support-tickets .ticket, .panel.widget-support-tickets .ticket {
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.bg-color-blue {
+    background-color: #57889c !important
+}
+
+.bg-color-blueLight {
+    background-color: #92a2a8 !important
+}
+
+.bg-color-blueDark {
+    background-color: #4c4f53 !important
+}
+
+.bg-color-green {
+    background-color: #356e35 !important
+}
+
+.bg-color-greenLight {
+    background-color: #71843f !important
+}
+
+.bg-color-greenDark {
+    background-color: #496949 !important
+}
+
+.bg-color-red {
+    background-color: #a90329 !important
+}
+
+.bg-color-yellow {
+    background-color: #b09b5b !important
+}
+
+.bg-color-orange {
+    background-color: #c79121 !important
+}
+
+.bg-color-orangeDark {
+    background-color: #a57225 !important
+}
+
+.bg-color-pink {
+    background-color: #ac5287 !important
+}
+
+.bg-color-pinkDark {
+    background-color: #a8829f !important
+}
+
+.bg-color-purple {
+    background-color: #6e587a !important
+}
+
+.bg-color-darken {
+    background-color: #404040 !important
+}
+
+.bg-color-lighten {
+    background-color: #d5e7ec !important
+}
+
+.bg-color-white {
+    background-color: #fff !important
+}
+
+.bg-color-grayDark {
+    background-color: #525252 !important
+}
+
+.bg-color-magenta {
+    background-color: #6e3671 !important
+}
+
+.bg-color-teal {
+    background-color: #568a89 !important
+}
+
+.bg-color-redLight {
+    background-color: #a65858 !important
+}
+
+.irs-slider.last {
+    z-index: 2
+}
+
+.irs-min {
+    position: absolute;
+    display: block;
+    left: 0;
+    cursor: default
+}
+
+.irs-max {
+    position: absolute;
+    display: block;
+    right: 0;
+    cursor: default
+}
+
+.irs-from, .irs-single, .irs-to {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    cursor: default;
+    white-space: nowrap
+}
+
+.irs-grid {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px
+}
+
+.irs-with-grid .irs-grid {
+    display: block
+}
+
+.irs-grid-pol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 8px
+}
+
+.irs-grid-pol.small {
+    height: 4px
+}
+
+.irs-grid-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 9px;
+    line-height: 9px
+}
+
+.irs {
+    height: 40px
+}
+
+.irs-with-grid {
+    height: 60px
+}
+
+.irs-line {
+    height: 8px;
+    top: 25px;
+    background: #eee
+}
+
+.irs-line-left, .irs-line-mid, .irs-line-right {
+    height: 8px
+}
+
+.irs-diapason {
+    height: 8px;
+    top: 25px
+}
+
+.irs-slider {
+    width: 10px;
+    height: 22px;
+    top: 17px;
+    border: 1px solid #fff;
+    background: #858585
+}
+
+.irs-slider:hover {
+    background: #6c6c6c
+}
+
+#irs-active-slider {
+    background: #686868;
+    box-shadow: rgba(0, 0, 0, .3) 1px 1px 1px 0;
+    width: 12px;
+    height: 24px;
+    top: 16px
+}
+
+.irs-max, .irs-min {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.333;
+    text-shadow: none;
+    top: 0;
+    padding: 1px 3px;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 0
+}
+
+.lt-ie9 .irs-max, .lt-ie9 .irs-min {
+    background: #bfbfbf
+}
+
+.irs-from, .irs-single, .irs-to {
+    color: #fff;
+    font-size: 10px;
+    line-height: 1.333;
+    text-shadow: none;
+    padding: 1px 5px;
+    background: rgba(0, 0, 0, .4);
+    border-radius: 0
+}
+
+.lt-ie9 .irs-from, .lt-ie9 .irs-single, .lt-ie9 .irs-to {
+    background: #999
+}
+
+.irs-grid-pol {
+    background: #99a4ac
+}
+
+.irs-grid-text {
+    color: #99a4ac
+}
+
+.irs-diapason {
+    background: #3276b1
+}
+
+article.sortable-grid {
+    min-height: 30px;
+}
+
+.widget-grid > article.col-x {
+    padding-right: 7px;
+    padding-left: 7px
+}
+
+.jarviswidget {
+    margin: 0 0 14px;
+    position: relative;
+    -moz-border-radius: 0;
+    -khtml-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    padding: 0
+}
+
+.widget-content-padding {
+    padding: 20px
+}
+
+.widget-content-padding .well {
+    margin-bottom: 0
+}
+
+.jarviswidget > header {
+    height: 36px;
+    padding: 0;
+    line-height: 40px
+}
+
+.jarviswidget > header > .widget-icon {
+    display: block;
+    width: 30px;
+    height: 32px;
+    position: relative;
+    float: left;
+    font-size: 111%;
+    line-height: 32px;
+    text-align: center;
+    margin-right: -10px
+}
+
+.jarviswidget > header h2 {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    margin: 0;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: 0
+}
+
+.jarviswidget > header > h2 {
+    margin-left: 10px;
+    float: left
+}
+
+.jarviswidget > header > :first-child.widget-icon {
+    margin-left: 0
+}
+
+.jarviswidget > header .jarviswidget-icon {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 12px 10px 0 0;
+    display: block;
+    zoom: 1;
+    z-index: 4000
+}
+
+.ui-sortable .jarviswidget-sortable > header {
+    cursor: move;
+    -moz-border-radius: 0;
+    -khtml-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    line-height: normal;
+    /*box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .05);
+    -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .05);
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .05)*/
+}
+
+.ui-sortable .jarviswidget-sortable.jarviswidget-collapsed > header {
+    -moz-border-radius: 0;
+    -khtml-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0
+}
+
+.jarviswidget-ctrls {
+    width: auto;
+    float: right;
+    padding: 0;
+    margin: 0
+}
+
+.jarviswidget-ctrls .button-icon {
+    min-width: 30px;
+    height: 32px;
+    float: left;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left: 1px solid rgba(0, 0, 0, .09)
+}
+
+.jarviswidget-ctrls .button-icon:hover {
+    background-color: rgba(0, 0, 0, .05)
+}
+
+.jarviswidget-loader {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    float: right;
+    background: no-repeat center center;
+    display: none;
+    text-align: center;
+    line-height: 32px;
+    font-size: 111%
+}
+
+.jarviswidget > div {
+    float: left;
+    width: 100%;
+    position: relative;
+    font-size: 13px;
+    -moz-border-radius: 0;
+    -khtml-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    border-width: 1px; /* 1px 2px*/
+    border-style: solid;
+    border-top: none;
+    border-right-color: #CCC !important;
+    border-bottom-color: #CCC !important;
+    border-left-color: #CCC !important;
+    padding: 13px 13px 0;
+    overflow: visible
+}
+
+.jarviswidget .widget-body {
+    min-height: 100px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 2px
+}
+
+.jarviswidget .widget-body.widget-hide-overflow {
+    overflow: hidden
+}
+
+.widget-toolbar.no-border {
+    border-left: none
+}
+
+.widget-body.no-padding {
+    margin: -13px -13px 0
+}
+
+.widget-body.no-padding .alert {
+    margin: 0 0 10px;
+    padding: 10px;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    border-width: 0 0 1px !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important
+}
+
+.jarviswidget.well.transparent .widget-body.no-padding {
+    margin: 0 !important
+}
+
+.widget-body > table {
+    margin-bottom: 0
+}
+
+.no-padding .md-editor, .widget-body.no-padding .cke_chrome {
+    border: none
+}
+
+.widget-toolbar > .smart-form {
+    margin-top: 2px
+}
+
+.widget-toolbar > .smart-form .toggle:last-child {
+    font-size: 12px;
+    line-height: 29px
+}
+
+.widget-toolbar > .smart-form .checkbox input + i, .widget-toolbar > .smart-form .radio input + i, .widget-toolbar > .smart-form .toggle input + i {
+    border-width: 1px;
+    border-color: #C7C7C7 !important;
+    margin-top: 1px;
+    box-shadow: 0 1px 1px #FFF, 0 1px 1px #858585 inset;
+    -webkit-box-shadow: 0 1px 1px #FFF, 0 1px 1px #858585 inset;
+    -moz-box-shadow: 0 1px 1px #FFF, 0 1px 1px #858585 inset
+}
+
+.jarviswidget.well {
+    margin: 0 0 30px
+}
+
+.jarviswidget.well > div {
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important
+}
+
+.jarviswidget.well header {
+    display: none
+}
+
+.widget-footer {
+    display: block;
+    min-height: 32px;
+    vertical-align: middle;
+    position: relative;
+    background-color: #F8F7F7;
+    padding: 5px;
+    border-top: 1px solid #E4E4E4;
+    text-align: right;
+    margin: 0 -13px -13px
+}
+
+.no-padding .widget-footer {
+    margin: 0
+}
+
+.widget-footer.smart-form > label {
+    margin-top: 4px;
+    display: block
+}
+
+.jarviswidget-editbox {
+    display: none;
+    padding: 10px
+}
+
+.jarviswidget-timestamp {
+    font-size: 12px;
+    color: #868686;
+    font-style: italic;
+    margin: 10px 0 0
+}
+
+.jarviswidget-placeholder {
+    -moz-border-radius: 0;
+    -khtml-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin-bottom: 28px;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body.nooverflow {
+    overflow: hidden;
+    position: fixed;
+    width: 100%
+}
+
+#jarviswidget-fullscreen-mode {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050
+}
+
+#jarviswidget-fullscreen-mode .jarviswidget {
+    margin: 0;
+    -moz-border-radius: 0;
+    -khtml-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0
+}
+
+#jarviswidget-fullscreen-mode .jarviswidget > div {
+    overflow-y: scroll;
+    -moz-border-radius: 0;
+    -khtml-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0
+}
+
+#jarviswidget-fullscreen-mode > div > header {
+    cursor: default
+}
+
+.smart-form.widget-body-toolbar, .widget-body-toolbar {
+    display: block;
+    padding: 8px 10px;
+    margin: -13px -13px 13px;
+    min-height: 42px;
+    border-bottom: 1px solid #ccc;
+    background: #fafafa
+}
+
+.no-padding .smart-form.widget-body-toolbar, .no-padding .widget-body-toolbar, .no-padding.widget-body-toolbar {
+    display: block;
+    margin: 0
+}
+
+.smart-form .widget-body-toolbar .inline-group, .widget-body-toolbar.smart-form .inline-group {
+    float: left;
+    margin-top: 4px
+}
+
+.widget-body-toolbar .btn {
+    vertical-align: middle
+}
+
+.widget-body-toolbar .btn-xs {
+    margin-top: 5px
+}
+
+.widget-body-ajax-loading::before {
+    /*content: url(../img/ajax-loader.gif);*/
+    padding-top: 18%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    background: rgba(255, 255, 255, .4);
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    position: absolute
+}
+
+.widget-body-ajax-loading:hover {
+    cursor: wait !important
+}
+
+.jarviswidget > header {
+    color: #333;
+    border: 1px solid #C2C2C2;
+    background: #fafafa
+}
+
+.jarviswidget > div {
+    background-color: #fff !important
+}
+
+.jarviswidget-editbox {
+    border-bottom: 1px solid #B1B1B1;
+    background-color: #fff;
+    margin: -13px -13px 13px
+}
+
+.no-padding .jarviswidget-editbox {
+    margin: 0 0 10px
+}
+
+.jarviswidget-placeholder {
+    background-color: #FFC;
+    border: 1px dashed #A7A7A7
+}
+
+.jarviswidget-remove-colors {
+    color: #333 !important;
+    padding: 0 !important;
+    background: none !important
+}
+
+.jarviswidget-color-magenta > header {
+    border-color: #643167 !important;
+    background: #6e3671;
+    color: #fff
+}
+
+.jarviswidget-color-magenta .nav-tabs li:not(.active) a, .jarviswidget-color-magenta > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-magenta .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-pink > header {
+    border-color: #a24d7f !important;
+    background: #ac5287;
+    color: #fff
+}
+
+.jarviswidget-color-pink .nav-tabs li:not(.active) a, .jarviswidget-color-pink > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-pink .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-pinkDark > header {
+    border-color: #a27998 !important;
+    background: #a8829f;
+    color: #fff
+}
+
+.jarviswidget-color-pinkDark .nav-tabs li:not(.active) a, .jarviswidget-color-pinkDark > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-pinkDark .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-yellow > header {
+    border-color: #aa9452 !important;
+    background: #b09b5b;
+    color: #fff
+}
+
+.jarviswidget-color-yellow .nav-tabs li:not(.active) a, .jarviswidget-color-yellow > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-yellow .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-orange > header {
+    border-color: #ba871f !important;
+    background: #c79121;
+    color: #fff
+}
+
+.jarviswidget-color-orange .nav-tabs li:not(.active) a, .jarviswidget-color-orange > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-orange .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-orangeDark > header {
+    border-color: #b1811d !important;
+    background: #b6841e;
+    color: #fff
+}
+
+.jarviswidget-color-orangeDark .nav-tabs li:not(.active) a, .jarviswidget-color-orangeDark > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-orangeDark .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-darken > header {
+    border-color: #383838 !important;
+    background: #404040;
+    color: #fff
+}
+
+.jarviswidget-color-darken > .nav-tabs > li:not(.active) > a, .jarviswidget-color-darken > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-darken .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-purple > header {
+    border-color: #665271 !important;
+    background: #6e587a;
+    color: #fff
+}
+
+.jarviswidget-color-purple .nav-tabs li:not(.active) a, .jarviswidget-color-purple > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-purple .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-teal > header {
+    border-color: #508180 !important;
+    background: #568a89;
+    color: #fff
+}
+
+.jarviswidget-color-teal .nav-tabs li:not(.active) a, .jarviswidget-color-teal > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-teal .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-blueDark > header {
+    border-color: #45474b !important;
+    background: #4c4f53;
+    color: #fff
+}
+
+.jarviswidget-color-blueDark .nav-tabs li:not(.active) a, .jarviswidget-color-blueDark > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-blueDark .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-blue > header {
+    border-color: #ccc !important;
+    background: #57889c !important;
+    color: #fff
+}
+
+.jarviswidget-color-blue .nav-tabs li:not(.active) a, .jarviswidget-color-blue > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-blue .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-blueLight > header {
+    border-color: #a0aeb3 !important;
+    background: #cbd2d5;
+    color: #000
+}
+
+.jarviswidget-color-blueLight .nav-tabs li a:hover, .jarviswidget-color-blueLight .nav-tabs li:not(.active) a, .jarviswidget-color-blueLight > header > .jarviswidget-ctrls a {
+    color: #2b363c !important
+}
+
+.jarviswidget-color-red > header {
+    border-color: #9a0325 !important;
+    background: #a90329;
+    color: #fff
+}
+
+.jarviswidget-color-red .nav-tabs li:not(.active) a, .jarviswidget-color-red > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-red .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-redLight > header {
+    border-color: #9c5353 !important;
+    background: #a65858;
+    color: #fff
+}
+
+.jarviswidget-color-redLight .nav-tabs li:not(.active) a, .jarviswidget-color-redLight > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-redLight .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-white > header {
+    border-color: #ccc !important;
+    background: #fff;
+    color: #666
+}
+
+.jarviswidget-color-white .nav-tabs li a:hover, .jarviswidget-color-white .nav-tabs li:not(.active) a, .jarviswidget-color-white > header > .jarviswidget-ctrls a {
+    color: gray !important
+}
+
+.jarviswidget-color-greenDark > header {
+    border-color: #436043 !important;
+    background: #496949;
+    color: #fff
+}
+
+.jarviswidget-color-greenDark .nav-tabs li:not(.active) a, .jarviswidget-color-greenDark > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-greenDark .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-green > header {
+    border-color: #306430 !important;
+    background: #356e35;
+    color: #fff
+}
+
+.jarviswidget-color-green .nav-tabs li:not(.active) a, .jarviswidget-color-green > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-green .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.jarviswidget-color-greenLight > header {
+    border-color: #687a3a !important;
+    background: #71843f;
+    color: #fff
+}
+
+.jarviswidget-color-greenLight .nav-tabs li:not(.active) a, .jarviswidget-color-greenLight > header > .jarviswidget-ctrls a {
+    color: #fff !important
+}
+
+.jarviswidget-color-greenLight .nav-tabs li a:hover {
+    color: #333 !important
+}
+
+.color-select {
+    list-style: none;
+    margin: 0;
+    padding: 4px;
+    min-width: 166px;
+    max-width: 156px;
+    right: -3px
+}
+
+.color-select li {
+    display: block;
+    margin: 2px;
+    float: left
+}
+
+.color-select li span:hover {
+    border: 3px solid rgba(0, 0, 0, .2)
+}
+
+.color-box, .color-select li span {
+    display: block;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    background: #333;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer
+}
+
+.color-box {
+    position: relative;
+    vertical-align: middle;
+    border: 1px solid rgba(255, 255, 255, .3) !important;
+    outline: 1px solid rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, .3) !important
+}
+
+.color-box:hover, .open .color-box {
+    outline: 1px solid rgba(0, 0, 0, .1) !important
+}
+
+.color-box:hover {
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07)
+}
+
+.color-box:active {
+    top: 1px;
+    left: 1px
+}
+
+.widget-toolbar > .color-box {
+    margin-top: 7px;
+    width: 18px;
+    height: 18px;
+    outline: 1px solid rgba(0, 0, 0, .2) !important
+}
+
+.widget-toolbar .dropdown-menu.color-select {
+    right: -1px
+}
+
+.widget-toolbar > .color-box:active, .widget-toolbar > .color-box:focus, .widget-toolbar > .color-box:hover {
+    outline: 1px solid rgba(0, 0, 0, .25) !important
+}
+
+.jarviswidget-ctrls a {
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    line-height: 32px;
+    padding: 0;
+    margin: 0;
+    color: #333
+}
+
+.clearfix:after, .clearfix:before, .inner-spacer:after, .inner-spacer:before, .jarviswidget-editbox:after, .jarviswidget-editbox:before, .jarviswidget:after, .jarviswidget:before, .jarviswidget > div:after, .jarviswidget > div:before {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden
+}
+
+.clearfix:after, .inner-spacer:after, .jarviswidget-editbox:after, .jarviswidget:after, .jarviswidget > div:after {
+    clear: both
+}
+
+.clearfix, .inner-spacer:after, .jarviswidget, .jarviswidget-editbox, .jarviswidget > div {
+    zoom: 1
+}
+
+.widget-toolbar {
+    display: inline-block;
+    float: right;
+    width: auto;
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    border-left: 1px solid rgba(0, 0, 0, .09);
+    cursor: pointer;
+    padding: 0 8px;
+    text-align: center
+}
+
+.widget-toolbar > :first-child {
+    text-align: left
+}
+
+.jarviswidget header .nav-tabs {
+    border-bottom-color: transparent
+}
+
+.jarviswidget header .nav-tabs > li > a {
+    border-radius: 0;
+    border: none;
+    padding: 7px 15px 6px
+}
+
+.jarviswidget header:first-child .nav-tabs {
+    float: left
+}
+
+.jarviswidget header:first-child .nav-tabs li {
+    padding-left: 0
+}
+
+.jarviswidget header:first-child .nav-tabs li a {
+    color: #333
+}
+
+.jarviswidget header:first-child .nav-tabs.pull-right li:last-child a {
+    margin-right: 0 !important;
+    border-right: none !important
+}
+
+.jarviswidget header .nav-tabs > li.active > a, .jarviswidget header .nav-tabs > li.active > a:focus, .jarviswidget header .nav-tabs > li.active > a:hover {
+    color: #555;
+    background-color: #FFF;
+    border: 1px solid #C2C2C2;
+    border-bottom-color: transparent;
+    border-top: none;
+    cursor: default
+}
+
+.jarviswidget header .nav-pills {
+    margin: 3px
+}
+
+.jarviswidget header .nav-pills > li > a {
+    padding: 3px 5px 4px
+}
+
+.widget-toolbar .btn-group {
+    margin-top: -3px
+}
+
+.widget-toolbar > .btn {
+    margin-top: -3px;
+    font-size: 12px !important;
+    padding: 1px 8px !important
+}
+
+.widget-toolbar .smart-form label.checkbox, .widget-toolbar .smart-form label.radio {
+    line-height: 29px
+}
+
+.widget-toolbar > .label {
+    vertical-align: middle;
+    margin-top: -3px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    padding: 4px 7px
+}
+
+.widget-toolbar > .badge {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 50%;
+    font-weight: 400;
+    min-width: 24px;
+    text-align: center !important
+}
+
+.widget-toolbar .progress {
+    width: 130px;
+    margin: 7px 0 0;
+    height: 18px !important;
+    font-size: 12px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 0 0 1px #d1d1d1 inset;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 0 0 0 1px #d1d1d1 inset;
+    -moz-box-shadow: 0 1px 0 transparent, 0 0 0 1px #D1D1D1 inset
+}
+
+.widget-toolbar .progress-bar {
+    font-size: 12px
+}
+
+.widget-toolbar .pagination {
+    margin: 4px 0
+}
+
+.widget-toolbar .pagination > li > a {
+    padding: 2px 7px
+}
+
+.widget-toolbar .widget-text-input {
+    max-width: 220px
+}
+
+.widget-toolbar input[type=text] {
+    height: 28px !important;
+    margin-top: 2px
+}
+
+.widget-toolbar .smart-form .icon-append, .widget-toolbar .smart-form .icon-prepend, .widget-toolbar.smart-form .icon-append, .widget-toolbar.smart-form .icon-prepend {
+    top: 3px !important
+}
+
+#jarviswidget-fullscreen-mode .fc-grid .fc-day-number {
+    padding: 5px 12px;
+    font-size: 40px
+}
+
+.jcrop-holder {
+    direction: ltr;
+    text-align: left
+}
+
+.jcrop-hline, .jcrop-vline {
+    /*background: #fff url(../img/jcrop/Jcrop.gif);*/
+    font-size: 0;
+    position: absolute
+}
+
+.jcrop-vline {
+    height: 100%;
+    width: 1px !important
+}
+
+.jcrop-vline.right {
+    right: 0
+}
+
+.jcrop-hline {
+    height: 1px !important;
+    width: 100%
+}
+
+.jcrop-hline.bottom {
+    bottom: 0
+}
+
+.jcrop-tracker {
+    height: 100%;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none
+}
+
+.jcrop-handle {
+    background-color: #333;
+    border: 1px #eee solid;
+    width: 7px;
+    height: 7px;
+    font-size: 1px
+}
+
+.jcrop-handle.ord-n {
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+    top: 0
+}
+
+.jcrop-handle.ord-s {
+    bottom: 0;
+    left: 50%;
+    margin-bottom: -4px;
+    margin-left: -4px
+}
+
+.jcrop-handle.ord-e {
+    margin-right: -4px;
+    margin-top: -4px;
+    right: 0;
+    top: 50%
+}
+
+.jcrop-handle.ord-w {
+    left: 0;
+    margin-left: -4px;
+    margin-top: -4px;
+    top: 50%
+}
+
+.jcrop-handle.ord-nw {
+    left: 0;
+    margin-left: -4px;
+    margin-top: -4px;
+    top: 0
+}
+
+.jcrop-handle.ord-ne {
+    margin-right: -4px;
+    margin-top: -4px;
+    right: 0;
+    top: 0
+}
+
+.jcrop-handle.ord-se {
+    bottom: 0;
+    margin-bottom: -4px;
+    margin-right: -4px;
+    right: 0
+}
+
+.jcrop-handle.ord-sw {
+    bottom: 0;
+    left: 0;
+    margin-bottom: -4px;
+    margin-left: -4px
+}
+
+.jcrop-dragbar.ord-n, .jcrop-dragbar.ord-s {
+    height: 7px;
+    width: 100%
+}
+
+.jcrop-dragbar.ord-e, .jcrop-dragbar.ord-w {
+    height: 100%;
+    width: 7px
+}
+
+.jcrop-dragbar.ord-n {
+    margin-top: -4px
+}
+
+.jcrop-dragbar.ord-s {
+    bottom: 0;
+    margin-bottom: -4px
+}
+
+.jcrop-dragbar.ord-e {
+    margin-right: -4px;
+    right: 0
+}
+
+.jcrop-dragbar.ord-w {
+    margin-left: -4px
+}
+
+#widget-grid .jarviswidget > header h2 {
+    line-height: 34px;
+}
+
+#widget-grid .jarviswidget > header {
+    height: 35px;
+}

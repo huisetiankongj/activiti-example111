@@ -1,0 +1,149 @@
+#div-text{color:#ff0}
+* {
+    word-wrap: break-word
+}
+
+
+.cl:after, .clearfix:after, .clear:after {
+    content: "\20";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.cl, .clearfix, .clear {
+    zoom: 1
+}
+
+#animated-group .animated.btn {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#animated-group #text {
+    font-size: 15px;
+    background: url("../img/animatebg.jpg") center;
+    width: 160px;
+    height: 130px;
+}
+
+/*底部链接*/
+.tinyfooterrap a, .tinyfooterrap a:link, .tinyfooterrap a:visited {
+    color: #fff;
+    font-weight: normal
+}
+
+.tinyfooterrap a:hover {
+    color: #ddd
+}
+
+/*展示表格*/
+.table-borderno > thead > tr > th, .table-borderno > tbody > tr > td {
+    border-right: none;
+    border-bottom: none;
+}
+
+/*按钮 按钮组*/
+/*关闭*/
+.close {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.3;
+    filter: alpha(opacity=20)
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.4;
+    filter: alpha(opacity=40)
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none
+}
+
+/*各种颜色的按钮*/
+.demo-btns {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.demo-btns > li {
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.dropdownSm ul.dropdown-menu > li > a {
+    font-size: 12px;
+    padding: 4px 18px;
+}
+
+
+
+/*代码标签强调*/
+#tinypagecontent code {
+    color: #c7254e
+}
+
+/*代码标签强调*/
+.line-boxs {
+    border: solid 1px #ddd;
+    padding: 10px
+}
+
+.line-boxs p {
+    border: solid 1px #eed;
+    padding-left: 5px;
+}
+
+/*组件统计*/
+.tinyStatistical .tinyOffset {
+    margin-left: -58px
+}
+
+.tinyStatistical .tinyOffset i {
+    color: #c30
+}
+
+/*easy饼图数据统计显示布局样式在实际运用中是去除的*/
+.percentage {
+    display: inline-block;
+}
+
+.percentage,
+.easyLabel {
+    text-align: center;
+    color: #333;
+    font-weight: 100;
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+.credits {
+    padding-top: 0.5em;
+    clear: both;
+    color: #999;
+}
+
+.credits a {
+    color: #333;
+}
+
+/*首页及时状态进图条*/
+.show-stats .progress {
+    height: 7px;
+    border-radius: 0;
+    margin-top: 3px;
+    margin-bottom: 15px
+}

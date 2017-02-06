@@ -1,0 +1,4 @@
+.tree-lists-rap ul,.tree-lists-rap li{list-style:none;padding:0;margin:0;cursor:pointer}
+.tree-lists-rap li{padding-left:15px;}
+.tree-lists-rap .fa{font-size:10px}
+.tree-lists-rap {-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;}

@@ -1,0 +1,23 @@
+/*4.12 返回顶部
+	Name:			mod_totop
+	Level:			Global
+	Example:		<a href="javascript:void(0)" class="toTop" title=backToTopTxt alt=backToTopTxt></a>
+	Explain:		返回顶部
+*/
+.toTop {
+    position: fixed;
+    display: block;
+    width: 48px;
+    height: 49px;
+    z-index: 99999;
+    text-indent: -9999em;
+    overflow: hidden;
+    right: 20px;
+    visibility: visible;
+    bottom: 10px;
+    background: url(../images/totop.png) no-repeat 0 0
+}
+
+.toTop:hover {
+    background-position: -48px 0
+}

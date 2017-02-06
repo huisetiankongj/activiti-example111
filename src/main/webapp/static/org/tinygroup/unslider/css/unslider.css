@@ -1,0 +1,94 @@
+.slider {
+    position: relative;
+    text-align: center;
+    margin: 0 auto
+}
+
+.slider .tabcon li {
+    float: left;
+    overflow: hidden
+}
+
+.dots {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    bottom: 10px;
+    text-align: center
+}
+
+.dots span {
+    display: inline-block;
+    text-align: center;
+    width: 8px;
+    height: 8px;
+    font-size: 0;
+    line-height: 0;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: #C2C2C2;
+    border-radius: 8px
+}
+
+.dots span.active {
+    background-color: #222
+}
+
+.numSlider .dots span {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    margin-right: 10px;
+    line-height: 20px;
+    background-color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    text-indent: inherit;
+    border-radius: 0
+}
+
+.numSlider .dots span.active {
+    background-color: #222;
+    color: #fff
+}
+
+.boxSlider .dots span {
+    width: 40px;
+    height: 10px;
+    border-radius: 0
+}
+
+.boxRadius .dots span {
+    width: 40px
+}
+
+.unslider-arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    height: 50px;
+    width: 50px;
+    z-index: 3;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    background-color: #303030;
+    background-image: url(../images/unslider-arrow.png);
+    background-repeat: no-repeat
+}
+
+.unslider-arrow:hover {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.prev {
+    left: 0;
+    background-position: 0 0
+}
+
+.next {
+    right: 0;
+    background-position: right 0
+}

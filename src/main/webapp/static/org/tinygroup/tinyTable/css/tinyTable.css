@@ -1,0 +1,92 @@
+table.tinytable > thead >tr> .sorting {
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-image: url("../images/sort_both.png");
+}
+
+table.tinytable > thead > tr>.sorting_asc {
+    background-image: url("../images/sort_asc.png")
+}
+
+table.tinytable > thead > tr>.sorting_desc {
+    background-image: url("../images/sort_desc.png")
+}
+
+table.tinytable > thead > tr>.sorting_asc_disabled {
+    background-image: url("../images/sort_asc_disabled.png")
+}
+
+table.tinytable > thead > tr>.sorting_desc_disabled {
+    background-image: url("../images/sort_desc_disabled.png")
+}
+
+.tinytable {
+    border-collapse: collapse;
+}
+
+.tinytable {
+    border: 1px solid #eee
+}
+
+.tinytable tr > th {
+    background: #eee;
+    color: #333;
+    font-weight: bold
+}
+
+.tinytable tr, .tinytable tr.odd {
+    background: #f9f9f9
+}
+
+.tinytable tr th, .tinytable tr td {
+    padding: 5px 8px;
+}
+
+/*border-bottom:1px solid #ddd;*/
+.tinytable tr:nth-child(2n+1), .tinytable tr.even {
+    background: #fff
+}
+
+.tinyheaderTools {
+    line-height: 30px;
+    height: 30px;
+    margin-bottom: 10px
+}
+
+.tinytableNav {
+    margin: 10px 0;
+    line-height: 34px
+}
+
+.tinytableNav .pagination-sm ul {
+    margin: 0
+}
+
+.table-responsive .tinytable {
+    max-width:auto;
+    min-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden
+}
+
+.table-responsive .tinytable td, .table-responsive .tinytable th {
+}
+
+.tinytableLoading {
+    font-size: 16px;
+    text-align: left;
+}
+
+#tableInfo {
+    padding: 5px;
+}
+
+/*新增行*/
+.itemlist-table tbody tr td {
+    vertical-align: middle;
+    border: none;
+}
+
+.itemlist-table {
+    border: #ddd 1px solid;
+}

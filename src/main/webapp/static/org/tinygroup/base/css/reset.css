@@ -1,0 +1,65 @@
+a, address, article, aside, audio, b, body, canvas, center, dd, div, dl, dt, em, embed, font, footer, form, h1, h2, h3, h4, h5, h6, header, hr, html, i, iframe, img, label, li, nav, object, ol, p, pre, section, span, strong, table, tbody, td, th, thead, tr, ul, var, video {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Microsoft Yahei';
+}
+
+img {
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+    -moz-force-broken-image-icon: 1;
+}
+
+input,
+button {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Microsoft Yahei';
+}
+
+body {
+    font: 12px/150% Microsoft YaHei, Arial, Verdana, simsun;
+    color: #333;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '.';
+    display: block;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}

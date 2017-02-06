@@ -1,0 +1,130 @@
+span.multiselect-native-select {
+    position: relative
+}
+
+span.multiselect-native-select select {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px -1px -1px -3px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    left: 50%;
+    top: 30px
+}
+
+.multiselect-container {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.multiselect-container .input-group {
+    margin: 5px 0
+}
+
+.multiselect-container > li {
+    padding: 0
+}
+
+.multiselect-container > li > a.multiselect-all label {
+    font-weight: 700
+}
+
+.multiselect-container > li.multiselect-group label {
+    margin: 0;
+    padding: 3px 20px 3px 20px;
+    height: 100%;
+    font-weight: 700
+}
+
+.multiselect-container > li.multiselect-group-clickable label {
+    cursor: pointer
+}
+
+.multiselect-container > li > a {
+    padding: 0
+}
+
+.multiselect-container > li > a > label {
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 3px 20px 3px 30px
+}
+
+.multiselect-container > li > a > label.radio, .multiselect-container > li > a > label.checkbox {
+    margin: 3px 0
+}
+
+.multiselect-container > li > a > label > input[type=checkbox] {
+    margin-bottom: 5px
+}
+
+.btn-group > .btn-group:nth-child(2) > .multiselect.btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+.form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
+    padding: 3px 20px 3px 30px
+}
+
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
+    margin-left: -20px;
+    margin-right: 0
+}
+
+.multiselect-native-select .btn-group, .multiselect-native-select .multiselect, .multiselect-native-select .open > .multiselect-container {
+    width: 100%;
+}
+
+.multiselect-container .multiselect-filter .input-group {
+    width: 100%;
+}
+
+.multiselect .multiselect-selected-text {
+    float: left;
+}
+
+.multiselect-native-select .btn .caret {
+    float: right;
+    margin-top: 8px;
+}
+
+.multiselect-native-select .multiselect-container li {
+    margin: 1px 5px 1px;
+}
+
+.multiselect-container .multiselect-filter .input-group-addon {
+    padding: 6px 10px;
+}
+
+.multiselect-container .multiselect-filter .input-group .input-group-btn {
+    text-align: right;
+}
+
+
+.open > .multiselect.dropdown-toggle {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.multiselect.dropdown-toggle,
+.multiselect.dropdown-toggle.btn-default:active:hover,
+.multiselect.dropdown-toggle.btn-default:active:focus,
+.open > .multiselect.dropdown-toggle.btn-default,
+.open > .multiselect.dropdown-toggle.btn-default:focus,
+.open > .multiselect.dropdown-toggle.btn-default:active {
+    background: #fff;
+    border-color: #ccc;
+    box-shadow: none;
+    padding-left: 8px;
+    padding-right: 5px;
+}

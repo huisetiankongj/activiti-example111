@@ -1,0 +1,87 @@
+﻿.star-degree .commstar {
+    width: 130px;
+    height: 24px;
+    background: url("../img/commstar.png") 0 -24px repeat-x;
+    position: relative;
+    display: inline-block;
+    margin-top: 3px;
+    vertical-align: top;
+    zoom:1
+}
+.star-degree .commstar a {
+    width: 20%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 24px
+}
+
+.star-degree .commstar a .face {
+    visibility: hidden;
+    position: absolute;
+    top: -20px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/face-red.png") no-repeat
+}
+
+.star-degree .commstar .active,.star-degree .commstar a:hover {
+    background: url("../img/commstar.png") 0 0 repeat-x
+}
+
+.star-degree .commstar a:hover .face {
+    visibility: visible
+}
+
+.star-degree .commstar .star1 {
+    width: 20%;
+    z-index: 9
+}
+
+.star-degree .commstar .star1 .face {
+    background-position: -80px 0
+}
+
+.star-degree .commstar .star2 {
+    width: 40%;
+    z-index: 8;
+}
+
+.star-degree .commstar .star2 .face {
+    background-position: -60px 0
+}
+
+.star-degree .commstar .star3 {
+    width: 60%;
+    z-index: 7
+}
+
+.star-degree .commstar .star3 .face {
+    background-position: -40px 0
+}
+
+.star-degree .commstar .star4 {
+    width: 80%;
+    z-index: 6
+}
+
+.star-degree .commstar .star4 .face {
+    background-position: -20px 0
+}
+
+.star-degree .commstar .star5 {
+    width: 100%;
+    z-index: 5
+}
+.star-degree .star-info {
+    display: inline-block;
+    line-height: 30px;
+    margin-left: 20px;
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 14px;
+    color: #e4393c
+}

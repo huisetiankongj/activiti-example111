@@ -1,0 +1,15 @@
+.flowprocess .process-step {
+    position: absolute;
+    width: 120px;
+    white-space: normal;
+    line-height: 22px
+}
+
+.flowprocess .process-step span {
+    cursor: pointer;
+}
+
+.right-context-menu a.list-group-item:hover {
+    color: #fff;
+    background: #337ab7
+}

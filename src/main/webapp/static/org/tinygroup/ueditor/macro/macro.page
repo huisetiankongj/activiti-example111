@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>宏控件</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+    <link rel="stylesheet" href="#link("/static/org/tinygroup/bootstrap/css/bootstrap.css")">
+    <script type="text/javascript" src="../dialogs/internal.js"></script>
+    <script type="text/javascript" src="#link("/static/org/tinygroup/jquery/js/jquery.1.11.3.min.js")"></script>
+
+    <style>
+        th{text-align:right}
+    </style>
+</head>
+<body>
+<div class="content" id="macro-show">
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+        <tr>
+            <th width="90">选择宏</th>
+            <td>
+                <select id="macroName" class="form-control">  </select>
+            </td>
+        </tr>
+        </thead>
+        <tbody id='itemAttr'></tbody>
+
+    </table>
+</div>
+<script type="text/javascript">
+    var oNode = null,thePlugins = 'macros';
+    var range = editor.selection.getRange();
+    var isInit=false;
+    var currentMacro={};
+    var macroList=[];
+    $.ajax({
+        url:"#link(MACROS_LIST)",
+        dataType:"json",
+        success:function(data){
+            macroList=data;
+            currentMacro=macroList[0];
+            for(var i= 0,l=data.length;i<l;i++) {
+                $("#macroName").append("<option value='" + data[i]["name"] + "'>" + data[i]["name"] + "</option>");
+            }
+            $("#macroName").trigger("change");
+        },
+        error:function(data) {
+            $("#macroName").append("<option value=''>获取列表出错</option>");
+        }
+    });
+    var setParaList=function(){
+        var html="";
+        $("#itemAttr").empty();
+        for(var i= 0,l= currentMacro.parameters.length;i<l;i++){
+            html='<tr class="para-macro"><th><span>'+currentMacro.parameters[i]["name"]+'</span></th><td><input type="text" id="'+currentMacro.parameters[i]["name"]+'" class="form-control"></td></tr>';
+            $("#itemAttr").append(html);
+        }
+        if(currentMacro.hasBody==true || currentMacro.hasBody=="true"){
+            $("#itemAttr").append('<tr> <th><span>宏体</span></th><td><textarea id="body" class="form-control"></textarea></td></tr>');
+        }
+        macroInit();
+    }
+    $("#macroName").on("change",function(){
+        var currentMacroName=$(this).val();
+        for(var i= 0,l=macroList.length;i<l;i++) {
+            if(macroList[i]["name"]==currentMacroName){
+                currentMacro=macroList[i];
+                macro_para_length=currentMacro.parameters.length;
+                break;
+            }
+        }
+        setParaList();
+    });
+
+    var macroInit = function() {
+        var _this_para_info,_para_lists,_oNode;
+        if(isInit) return false;
+        isInit=true;
+        if( UE.plugins[thePlugins].editdom ) {
+            oNode=UE.plugins[thePlugins].editdom;
+            _oNode=$(oNode);
+            $("#macroName").val(_oNode.find("h3>span.macro-name:first").html()).trigger("change");
+            _para_lists=_oNode.find(".node-para-list>li");
+            for(var i= 0,l=_para_lists.size();i<l;i++) {
+                _this_para_info=_para_lists.eq(i).children("span");
+                $("#"+_this_para_info.eq(0).html()).val(_this_para_info.eq(1).html())
+            }
+            $("#body").val(_oNode.children(".macro-body:first").html());
+        }
+    }
+
+    dialog.oncancel = function () {
+        if( UE.plugins[thePlugins].editdom ) {
+            delete UE.plugins[thePlugins].editdom;
+        }
+    };
+
+   /* function printf() {
+        var num = arguments.length;
+        var oStr = arguments[0];
+        for (var i = 1; i < num; i++) {
+            var pattern = "\\{" + (i-1) + "\\}";
+            var re = new RegExp(pattern, "g");
+            oStr = oStr.replace(re, arguments[i]);
+        }
+        return oStr;
+    }*/
+    dialog.onok = function (){
+        var para_name,para_val,macro_name,macro_body,paraArr=[];
+        macro_body=$("#body").val();
+        macro_name=$("#macroName").val()
+        if(typeof(macro_body)=="undefined") macro_body="";
+        try{range.setStartAfter(oNode).select();}catch(e){}
+
+        if( oNode ) domUtils.remove(oNode,false);
+
+        var _oNode = $('<div tinyplugins="macros" contenteditable="false" class="macro-rap">');
+        _oNode.attr('tinyPlugins',thePlugins);
+        _oNode.append("<h3>宏:<span class='macro-name'>"+macro_name+"</span></h3>");
+        var _oNodeUl=$("<ul>").addClass("node-para-list");
+        var paras=$("#itemAttr tr.para-macro");
+        for(var i= 0,l=paras.size();i<l;i++){
+            thispara=paras.eq(i);
+            para_name=thispara.find("th>span").html();
+            para_val=thispara.find("input").val();
+            _para=$("<li><span class='para-node-name'>"+para_name+"</span>=<span contenteditable='true' class='para-node-value'>"+para_val+"</span></li>");
+            _oNodeUl.append(_para);
+            paraArr.push(para_name+'="'+para_val+'"');
+        }
+        _oNode.append(_oNodeUl);
+        if(currentMacro.hasBody==true || currentMacro.hasBody=="true"){
+            _oNode.append($("<div class='macro-body' contenteditable='true'></div>").html(macro_body));
+        }
+        _oNode.append($("<div>").addClass("macro-code").css("display","none").html("#@"+macro_name+"("+paraArr.join(",")+")"+macro_body+"#"+""+"end"));
+        _oNode.append("<hr/>");
+        editor.execCommand('insertHtml',_oNode.prop("outerHTML"));
+        if(oNode) delete UE.plugins[thePlugins].editdom;
+    };
+</script>
+</body>
+</html>

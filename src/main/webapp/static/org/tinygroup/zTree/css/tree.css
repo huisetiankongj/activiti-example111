@@ -1,0 +1,236 @@
+input.radio {
+    margin: 0 2px 0 8px;
+}
+
+input.radio.first {
+    margin-left: 0;
+}
+
+input.empty {
+    color: lightgray;
+}
+
+code {
+    color: #2f332a;
+}
+
+.highlight_red {
+    color: #A60000;
+}
+
+.highlight_green {
+    color: #A7F43D;
+}
+
+li.title {
+    list-style: none;
+}
+
+/*ul.list {margin-left: 17px;}*/
+#citySel, #orgSel {
+    border: #ccc 1px solid;
+    height: 30px;
+    width: 221px;
+    padding-left: 11px;
+}
+
+.distributionStyle {
+    float: left;
+    margin-left: 12px;
+    width: 102px;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 6px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.modal-dialog .modal-content .dialog-layout #myRoleModifylistDiv {
+    padding: 0;
+}
+
+.modal-dialog #myAuthModifylistDiv .form-horizontal, .modal-dialog #myAuthModifylistDiv .form-horizontal {
+    padding-top: 1px;
+}
+
+.modal .modal-dialog .modal-content {
+    width: 560px;
+}
+
+#myAuthModifylistDiv .form-horizontal .zTreeDemoBackground {
+    margin-right: -23px;
+}
+
+/*div.content_wrap {width: 600px;height:380px;}
+div.content_wrap div.left{float: left;width: 250px;}
+div.content_wrap div.right{float: right;width: 340px;}*/
+/*div.zTreeDemoBackground {width:250px;height:362px;text-align:left;}*/
+div.zTreeDemoBackground {
+    margin-top: -1px;
+}
+
+ul.ztree {
+    padding-top: 6px;
+    border: 1px solid #c3daf9;
+    background: #f9f9f9; /*width:195px;height:360px;*/
+    overflow: auto;
+}
+
+ul.log {
+    border: 1px solid #617775;
+    background: #f0f6e4;
+    width: 300px;
+    height: 170px;
+    overflow: hidden;
+}
+
+ul.log.small {
+    height: 45px;
+}
+
+ul.log li {
+    color: #666666;
+    list-style: none;
+    padding-left: 10px;
+}
+
+ul.log li.dark {
+    background-color: #E3E3E3;
+}
+
+/* ruler */
+div.ruler {
+    height: 20px;
+    width: 220px;
+    background-color: #f0f6e4;
+    border: 1px solid #333;
+    margin-bottom: 5px;
+    cursor: pointer
+}
+
+div.ruler div.cursor {
+    height: 20px;
+    width: 30px;
+    background-color: #3C6E31;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    cursor: pointer
+}
+
+div#rMenu {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    background-color: #555;
+    text-align: left;
+    padding: 2px;
+}
+
+div#rMenu ul li {
+    margin: 1px 0;
+    padding: 0 5px;
+    cursor: pointer;
+    list-style: none outside none;
+    background-color: #DFDFDF;
+}
+
+.smart-style-4 .zTreeDemoBackground .form-control {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border: #ccc 1px solid;
+    border-bottom: none;
+}
+
+.selectTree .form-label {
+    font-size: 14px;
+}
+
+.form-horizontal .alignmentSty {
+    line-height: 35px;
+}
+
+/*分配角色*/
+#Tinyfoldshow .item h4 {
+    background: #f6f6f6;
+    border: #f1f1f1 1px solid;
+    font-size: 14px;
+}
+
+#Tinyfoldshow.Tinyfold .item .info {
+    padding: 0
+}
+
+.storeItemsbox .roleList {
+    display: inline-block;
+    margin-left: 12px;
+    width: 102px;
+    height: 20px;
+    margin-top: 6px;
+}
+
+.storeItemsbox .roleList b {
+    font-weight: normal;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    float: left;
+    width: 74px;
+}
+
+.storeItemsbox .roleList .cancel_btn {
+    display: none;
+    float: left
+}
+
+.storeItemsbox .roleList:hover .cancel_btn {
+    display: block;
+}
+
+.lineDashed {
+    margin-top: 5px;
+    border-top: #ddd 1px dashed;
+    margin-bottom: 2px
+}
+
+.leftztree > li:first-child span.button.switch.level0 {
+    visibility: hidden;
+    width: 1px;
+}
+
+.leftztree li ul.level0 {
+    padding: 0;
+    background: none;
+}
+
+.leftztree > li:first-child {
+    height: 20px;
+    padding-left: 2px;
+}
+
+.leftztree > li:first-child > a > span:first-child {
+    display: none
+}
+
+.leftztree > li:first-child > a > span:last-child {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+
+/*下拉树清空按钮*/
+.emptyButton {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    cursor: pointer;
+    color: #666
+}
+
+.emptyButton:hover {
+    color: #999
+}

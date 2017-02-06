@@ -1,0 +1,8 @@
+
+.tabBar {border-bottom:1px solid #ccc}
+.tabBar span {background-color:#e8e8e8;cursor:pointer;display:inline-block;float:left;font-weight:bold;height:31px;line-height:31px;padding:0 15px}
+.tabBar span.Current{background-color:#368;color:#fff}
+.tabCon {display:none}
+
+/*tabs*/
+.tabs-content{padding:15px;}

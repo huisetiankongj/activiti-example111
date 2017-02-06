@@ -1,0 +1,348 @@
+/*导航条*/
+.main-nav {
+    width: 100%;
+    z-index: 1;
+    background: #3d4a5d;
+    zoom: 1;
+}
+
+/*导航条背景*/
+.main-nav:after {
+    content: "\20";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.main-nav li, .main-nav li a {
+    height: 40px;
+    line-height: 40px
+}
+
+/*导航条高度*/
+.main-nav li {
+    float: left;
+    display: inline;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold
+}
+
+/*设置字体*/
+.main-nav li a {
+    display: inline-block;
+    padding: 0 18px;
+    color: #fff
+}
+
+/*链接颜色*/
+.main-nav li a:hover, .main-nav li.current a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #2C3543;
+    -webkit-transition: background-color 0.3s ease 0s;
+    -moz-transition: background-color 0.3s ease 0s;
+    -o-transition: background-color 0.3s ease 0s;
+    -ms-transition: background-color 0.3s ease 0s;
+    transition: background-color 0.3s ease 0s
+}
+
+/*交互颜色*/
+
+
+/*向导*/
+.steps, .step {
+    display: inline-block;
+    position: relative;
+    padding: 1em 2em 1em 3em;
+    vertical-align: top;
+    background-color: #FFF;
+    color: #888;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.step:after, .steps .step:after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    top: 0;
+    right: -1.45em;
+    border-bottom: 1.5em solid transparent;
+    border-left: 1.5em solid #FFF;
+    border-top: 1.5em solid transparent;
+    width: 0;
+    height: 0
+}
+
+.step, .steps .step, .steps .step:after {
+    -webkit-transition: opacity .1s ease, color .1s ease, -webkit-box-shadow .1s ease;
+    transition: opacity .1s ease, color .1s ease, box-shadow .1s ease
+}
+
+.steps {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
+    line-height: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: .3125rem
+}
+
+.steps .step:first-child {
+    padding-left: 1.35em;
+    border-radius: .3125em 0 0 .3125em
+}
+
+.steps .step:last-child {
+    border-radius: 0 .3125em .3125em 0
+}
+
+.steps .step:only-child {
+    border-radius: .3125em
+}
+
+.steps .step:last-child {
+    margin-right: 0
+}
+
+.steps .step:last-child:after {
+    display: none
+}
+
+.step:hover, .step.hover {
+    background-color: #F7F7F7;
+    color: rgba(0, 0, 0, .8)
+}
+
+.steps .step.hover:after, .steps .step:hover:after, .step:hover, .step.hover::after {
+    border-left-color: #F7F7F7
+}
+
+.steps .step.down, .steps .step:active, .step.down, .step:active {
+    background-color: #F0F0F0
+}
+
+.steps .step.down:after, .steps .step:active:after, .steps.down::after, .steps:active::after {
+    border-left-color: #F0F0F0
+}
+
+.steps .step.active, .active.step {
+    cursor: auto;
+    background-color: #428BCA;
+    color: #FFF;
+    font-weight: 700
+}
+
+.steps .step.active:after, .active.steps:after {
+    border-left-color: #428BCA
+}
+
+.steps .disabled.step, .disabled.step {
+    cursor: auto;
+    background-color: #FFF;
+    color: #CBCBCB
+}
+
+.disabled.step:after {
+    border: 0;
+    background-color: #FFF;
+    top: .42em;
+    right: -1em;
+    width: 2.15em;
+    height: 2.15em;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-shadow: -1px -1px 0 0 rgba(0, 0, 0, .1) inset
+}
+
+.attached.steps {
+    margin: 0;
+    border-radius: .3125em .3125em 0 0
+}
+
+.attached.steps .step:first-child {
+    border-radius: .3125em 0 0
+}
+
+.attached.steps .step:last-child {
+    border-radius: 0 .3125em 0 0
+}
+
+.bottom.attached.steps {
+    margin-top: -1px;
+    border-radius: 0 0 .3125em .3125em
+}
+
+.bottom.attached.steps .step:first-child {
+    border-radius: 0 0 0 .3125em
+}
+
+.bottom.attached.steps .step:last-child {
+    border-radius: 0 0 .3125em
+}
+
+/*向导数量*/
+.one.steps, .two.steps, .three.steps, .four.steps, .five.steps, .six.steps, .seven.steps, .eight.steps {
+    display: block
+}
+
+.one.steps > .step {
+    width: 100%
+}
+
+.two.steps > .step {
+    width: 50%
+}
+
+.three.steps > .step {
+    width: 33.333%
+}
+
+.four.steps > .step {
+    width: 25%
+}
+
+.five.steps > .step {
+    width: 20%
+}
+
+.six.steps > .step {
+    width: 16.666%
+}
+
+.seven.steps > .step {
+    width: 14.285%
+}
+
+.eight.steps > .step {
+    width: 12.5%
+}
+
+/*向导尺寸*/
+.small.step, .small.steps .step {
+    font-size: .8rem
+}
+
+/*小*/
+.step, .steps .step {
+    font-size: 1rem
+}
+
+/*默认*/
+.large.step, .large.steps .step {
+    font-size: 1.25rem
+}
+
+/*大*/
+
+
+/*jquery仿腾讯云下拉导航*/
+.head-v3 {
+    position: relative;
+    z-index: 100;
+    min-width: 1000px
+}
+
+.head-v3 .navigation-inner {
+    margin: 0 auto;
+    width: 980px;
+    position: relative
+}
+
+.navigation-up {
+    height: 48px;
+    line-height: 48px;
+    background: #3d4a5d
+}
+
+.navigation-up .navigation-v3 {
+    margin-left: 155px;
+    float: left;
+    _margin-left: 10px
+}
+
+.navigation-up .navigation-v3 ul {
+    float: left;
+    list-style: none;
+}
+
+.navigation-up .navigation-v3 li {
+    height: 48px;
+    float: left;
+    color: #fff
+}
+
+.navigation-up .navigation-v3 .nav-up-selected {
+    background: #344157
+}
+
+.navigation-up .navigation-v3 .nav-up-selected-inpage {
+    background: #202833
+}
+
+.navigation-up .navigation-v3 li a {
+    padding: 0 25px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.navigation-down {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%
+}
+
+.navigation-down .nav-down-menu {
+    width: 100%;
+    margin: 0;
+    background: #344157;
+    position: absolute;
+    top: 0
+}
+
+.navigation-down .nav-down-menu .navigation-down-inner {
+    margin: auto;
+    width: 1200px;
+    position: relative
+}
+
+.navigation-down .nav-down-menu dl {
+    float: left;
+    margin: 18px 80px 18px 0
+}
+
+.navigation-down .menu-1 dl {
+    margin: 20px 80px 25px 0
+}
+
+.navigation-down .menu-1 dt {
+    color: #61789e;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #61789e;
+    margin-bottom: 10px
+}
+
+.navigation-down .menu-1 dd {
+    margin-left: 0;
+    line-height: 30px;
+}
+
+.navigation-down .menu-1 dd a, .navigation-down .menu-2 dd a, .navigation-down .menu-3 dd a {
+    color: #fff;
+}
+
+.navigation-down .menu-1 dd a:hover {
+    color: #60aff6
+}
+

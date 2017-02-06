@@ -1,0 +1,15 @@
+.mgr-5px{margin-right:5px;}
+.container {max-width: 950px!important;}
+.container .actions {margin-bottom: 10px; padding: 0}
+.container .actions > .text {padding: 5px 5px 5px 15px; line-height: 20px}
+.mw-220px {max-width: 220px!important}
+#wrap h1{font-size:14px;}
+#interval{margin-right:10px;height:34px;}
+.canvas-wrapper {padding: 15px; border: 1px solid #ddd;}
+
+.w-100px{width:100px}
+.w-100px .btn{margin-left:2px;}
+.w-100px .form-control{height:30px;}
+.w-100px  .input-infobtn .btn{background:#f0f0f0;color:#141414;border:#ddd 1px solid;height:34px;}
+.w-100px  .input-infobtn .btn:hover{color:#222}
+.actions .input-group .form-control{padding:2px 3px}

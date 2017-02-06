@@ -1,0 +1,169 @@
+.panel > .panel-heading + .panel-collapse .panel-body {
+    border-top-color: #ddd
+}
+
+.panel > .panel-footer + .panel-collapse .panel-body {
+    border-bottom-color: #ddd
+}
+
+.panel-body {
+    padding: 15px
+}
+
+.panel-body:before, .panel-body:after {
+    display: table;
+    content: " "
+}
+
+.panel-body:after {
+    clear: both
+}
+
+.panel-body:before, .panel-body:after {
+    display: table;
+    content: " "
+}
+
+.panel-body:after {
+    clear: both
+}
+
+.panel > .panel-body + .table {
+    border-top: 1px solid #ddd
+}
+
+.outer .side-body .panel-body {
+    padding: 10px
+}
+
+.treeview li > a.active {
+    font-weight: bold
+}
+
+.treeNew {
+    padding: 0;
+    margin: 0
+}
+
+.treeNew li, .treeNew ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative
+}
+
+.treeNew > li {
+    margin-right: 20px;
+    font-weight: 400;
+    padding-bottom: 6px
+}
+
+.treeNew > li > ul li {
+    padding: 6px 5px 0 15px;
+    margin: 0
+}
+
+.treeNew li:before {
+    display: inline-block;
+    margin-right: 6px;
+    position: relative;
+    top: 0;
+    left: 0;
+    content: ' ';
+    width: 8px;
+    height: 8px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 2px
+}
+
+.treeNew > li ul {
+    border-left: 1px dotted #aaa;
+    margin-left: 3px;
+    font-weight: normal
+}
+
+.treeNew > li ul > li:before {
+    margin-right: 4px
+}
+
+.treeNew > li ul > li:hover:before {
+    content: ' '
+}
+
+.treeNew > li ul > li:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 15px;
+    left: -1px;
+    top: 16px;
+    height: 20px;
+    border-top: 1px dotted #aaa
+}
+
+.treeNew > li > ul li:last-child:after {
+    border-left: 1px solid #fff
+}
+
+/*
+.treeview .hitarea {
+	position: absolute;
+	left: 15px;
+	top: 5px;
+	background-color: #fff;
+	cursor: pointer
+}
+
+.treeview>li>.hitarea {
+	left: -1px;
+	top: 0
+}
+
+.treeview .hitarea:before {
+	color: #999;
+	content: '\e6f1';
+	font-family: treeIcon;
+	transition: all .3s;
+	font-size: 14px
+}
+
+.treeview li:hover .hitarea:before {
+	color: #2973ea
+}
+
+.treeview .hitarea.collapsable-hitarea:before {
+	content:'\e6f2'
+}
+*/
+
+.treeview .form-control, .treeview input[type='text'] {
+    padding: 1px 2px;
+    height: 20px;
+    display: inline-block
+}
+
+.table-form .form-control {
+    margin-bottom: 6px;
+}
+
+.icon-lg:before, .icon-large:before {
+    font-size: 1.33333333em;
+    vertical-align: -10%
+}
+
+.form-condensed .table-form > thead > tr > td {
+    border-top: none
+}
+
+.table-form > tbody > tr > td {
+    vertical-align: middle;
+    border-bottom: none;
+    border-top: none;
+    padding: 5px;
+}
+
+.updateBtn {
+    border: none;
+    background: none
+}

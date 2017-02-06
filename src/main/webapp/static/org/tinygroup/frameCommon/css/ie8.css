@@ -1,0 +1,355 @@
+.ie8 .navbar-header {
+    float: left;
+}
+
+.ie8 .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+}
+
+.ie8 .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+}
+
+.ie8 .navbar-collapse.in {
+    overflow-y: visible;
+}
+
+.ie8 .navbar > .container .navbar-brand,
+.ie8 .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px;
+}
+
+.ie8 .navbar-toggle {
+    display: none;
+}
+
+.ie8 .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.ie8 .navbar-nav .open .dropdown-menu > li > a,
+.ie8 .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+}
+
+.ie8 .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+}
+
+.ie8 .navbar-nav .open .dropdown-menu > li > a:hover,
+.ie8 .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+}
+
+.ie8 .navbar-nav {
+    float: left;
+    margin: 0;
+}
+
+.ie8 .navbar-nav > li {
+    float: left;
+}
+
+.ie8 .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.ie8 #main-navbar .dropdown > a:after {
+    content: "\f078";
+    display: inline-block;
+    float: right;
+    font-family: FontAwesome;
+    font-size: 10px;
+    position: relative;
+}
+
+.ie8 #main-navbar .dropdown.open {
+    border-bottom: none;
+}
+
+.ie8 #main-navbar .dropdown.open > a:after {
+    content: "\f077";
+}
+
+.ie8 #main-navbar {
+    overflow: visible !important;
+}
+
+.ie8 #main-wrapper #main-navbar .navbar-header {
+    width: 240px !important;
+    z-index: 1033;
+    padding-left:0 !important;
+    display:block;
+    float:left;
+}
+.ie8 #main-wrapper #main-navbar .navbar-header a{padding-left:56px;}
+.ie8 #main-navbar .navbar-brand {
+    padding-right: 14px;
+}
+
+.ie8 #main-navbar #main-menu-toggle {
+    width: 56px !important;
+}
+
+.ie8 #main-navbar #main-menu-toggle .navbar-icon {
+    left: 26px;
+}
+
+.ie8 #main-navbar #main-menu-toggle .navbar-icon:after {
+    content: "\f0d9";
+    right: 16px;
+}
+
+.ie8 #main-navbar .navbar-toggle {
+    display: none !important;
+}
+
+.ie8 #main-navbar .right {
+    left: 0;
+    padding-right: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1031;
+}
+
+.ie8 #main-navbar li {
+    border: none;
+}
+
+.ie8 #main-navbar li .divider {
+    display: block;
+}
+
+.ie8 #main-navbar li a {
+    line-height: 46px;
+}
+
+.ie8 #main-navbar .navbar-collapse {
+    height: auto !important;
+    overflow: visible !important;
+    padding: 0 !important;
+}
+
+.ie8 #main-navbar .navbar-nav,
+.ie8 #main-navbar .navbar-form {
+    position: relative;
+    z-index: 1032;
+}
+
+.ie8 #main-navbar .navbar-nav {
+    margin: 0;
+}
+
+.ie8 #main-navbar .navbar-nav > li > a {
+    height: 46px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.ie8 #main-navbar .navbar-nav.pull-right {
+    width: auto;
+}
+
+.ie8 #main-navbar .dropdown > a:after {
+    display: none;
+}
+
+.ie8 #main-navbar .dropdown.open {
+    border-bottom: none;
+}
+
+.ie8 #main-navbar .dropdown-menu .badge {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.ie8 #main-navbar .dropdown-menu > li > a {
+    line-height: 32px;
+    margin: 0;
+}
+
+.ie8 #main-navbar .pull-right .dropdown-menu {
+    float: right;
+    left: auto;
+    right: 0;
+}
+
+.ie8 #main-navbar form.navbar-form {
+    height: 46px;
+}
+
+.ie8 #main-navbar form.navbar-form .form-control {
+    height: 30px;
+    line-height: 20px;
+    margin-top: 8px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 150px;
+}
+
+.ie8 #main-navbar .user-menu > span {
+    display: none;
+}
+
+.ie8 #main-navbar .user-menu > img {
+    height: 25px;
+    margin-top: -3px;
+    width: 25px;
+}
+
+.ie8 .mmc #main-navbar #main-menu-toggle .navbar-icon,
+.ie8 .mme.mmc #main-navbar #main-menu-toggle .navbar-icon {
+    left: 20px;
+}
+
+.ie8 .mmc #main-navbar #main-menu-toggle .navbar-icon:after,
+.ie8 .mme.mmc #main-navbar #main-menu-toggle .navbar-icon:after {
+    content: "\f0da";
+    right: -8px;
+}
+
+.ie8 .mmc #main-navbar .navbar-header {
+    width: auto;
+}
+
+.ie8 #main-navbar .user-menu > span {
+    display: inline
+}
+
+.ie8 .no-main-menu #main-navbar .navbar-header
+{
+    width: auto;
+}
+
+.ie8 .breadcrumb>li{display:inline}
+
+.ie8 .mme #main-menu,
+.ie8 #main-menu,
+.ie8 .mme #main-menu-bg,
+.ie8 #main-menu-bg {
+    overflow: hidden;
+    width: 240px;
+    left:0;
+}
+
+.ie8 .mmc #main-menu,
+.ie8 .mme.mmc #main-menu,
+.ie8 .mmc #main-menu-bg,
+.ie8 .mme.mmc #main-menu-bg {
+    overflow: visible;
+    width: 56px;
+}
+
+.ie8 #main-menu ul.navigation > li {
+    width: 240px;
+}
+
+.ie8 #main-menu ul.navigation > li > a {
+    text-align: left;
+}
+
+.ie8 #main-menu ul.navigation > li > a > .menu-icon {
+    margin-right: 5px;
+}
+
+.ie8 #main-menu ul.navigation > li > a > .badge,
+.ie8 #main-menu ul.navigation > li > a > .label {
+    display: block;
+}
+
+.ie8 #main-menu ul.navigation > li > a > .mm-text {
+    display: inline;
+}
+
+.ie8 #main-menu ul.navigation > .mm-dropdown > a {
+    padding-right: 30px;
+}
+
+.ie8 #main-menu ul.navigation > .mm-dropdown > a:before,
+.ie8 .main-menu-right #main-menu ul.navigation > .mm-dropdown > a:before {
+    content: "\f105";
+    left: auto;
+    right: 14px;
+}
+
+.ie8 #main-menu ul.navigation > .mm-dropdown.open > ul {
+    display: block;
+}
+
+.ie8 #main-menu .menu-content {
+    display: block;
+}
+
+.ie8 .mmc #main-menu {
+    overflow: visible;
+}
+
+.ie8 .mmc #main-menu ul.navigation > li {
+    width: auto;
+}
+
+.ie8 .mmc #main-menu ul.navigation > li > a {
+    text-align: center;
+}
+
+.ie8 .mmc #main-menu ul.navigation > li > a > .menu-icon {
+    margin: 0;
+    text-align: center;
+}
+
+.ie8 .mmc #main-menu ul.navigation > li > a > .badge,
+.ie8 .mmc #main-menu ul.navigation > li > a > .label {
+    display: none;
+}
+
+.ie8 .mmc #main-menu ul.navigation > li > a > .mm-text {
+    display: none;
+}
+
+.ie8 .mmc #main-menu ul.navigation > .mm-dropdown > a {
+    padding-right: 14px;
+}
+
+.ie8 .mmc #main-menu ul.navigation > .mm-dropdown > a:before {
+    right: 7px;
+}
+
+.ie8 .mmc #main-menu ul.navigation > .mm-dropdown.open > ul {
+    display: none;
+}
+
+.ie8 .mmc #main-menu .menu-content {
+    display: none !important;
+}
+
+.ie8 #main-wrapper{
+    padding-left: 240px;
+}
+
+.ie8 .mme #content-wrapper,
+.ie8 .mmc.mme #content-wrapper {
+    left: 0;
+}
+
+.ie8 .mme #main-navbar .navbar-inner {
+    left: 0;
+}
+
+.ie8 .mmc #main-wrapper {
+    padding-left: 56px;
+}
+.ie8  #main-navbar .navbar-brand{display:inline}

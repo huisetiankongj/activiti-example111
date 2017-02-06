@@ -1,0 +1,41 @@
+
+/*table th带背景 圆角*/
+.table{border-radius:4px;}
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td{border-right:none;border-bottom:none;}
+.table-bordered>thead>tr>th{background:#f9f9f9}
+/*table th下边框为1px 居中*/
+.table>thead>tr>th{border-bottom:#ddc 1px solid}
+.text-center>tr>th{text-align:center}
+/*表格适配*/
+.table-flow {border: 1px solid #ccc;margin:0;width:100%;padding:0;border-collapse:collapse;border-spacing: 0;  margin: 0 auto;  }
+.table-flow tr {border: 1px solid #ddd;  padding:5px;  }
+.table-flow th, .table-flow td {padding:8px;}
+.table-flow th {text-transform: uppercase; letter-spacing: 1px; /*background:#f9f9f9;*/  }
+@media screen and (max-width: 600px) {
+    .table-flow {
+        border: 0;
+    }
+    .table-flow thead {
+        display: none;
+    }
+    .table-flow tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+    .table-flow td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+    }
+    .table-flow td:last-child {
+        border-bottom: 0;
+    }
+    .table-flow td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}

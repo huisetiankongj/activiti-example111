@@ -1,0 +1,19 @@
+.set-animation-delay(@index){
+  .animated.delay-@{index}{
+    -webkit-animation-delay:@index*1s;
+    animation-delay:@index*1s;;
+  }
+}
+.loop-animation-delay(@index) when (@index > 0) {
+  .set-animation-delay(@index);
+  .loop-animation-delay((@index - 1));
+}
+.loop-animation-delay(20);
+
+
+.animated.reverse{
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.animated-delay,.animated-waypoint{opacity:0;}

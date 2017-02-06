@@ -1,0 +1,166 @@
+.droptoprj {
+    display: inline-block;
+    cursor: pointer;
+    position: relative
+}
+
+.droptoprj .toprj {
+    display: inline-block
+}
+
+.droptoprj .active {
+    background: none
+}
+
+.droptoprj span {
+    margin-right: 5px
+}
+
+.droptoprj .dropdownbody {
+    background: #fff;
+    display: none;
+    width: 300px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000
+}
+
+.droptoprj .fixtools, .droptoprj .dropdownbody .select2-choice {
+    display: none
+}
+
+.fixselect2foot {
+    padding:10px
+}
+
+.trans {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.togglebox {
+    position: relative
+}
+
+.togglebox ul, .togglebox li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.togglebox h3 {
+    margin: 0;
+    list-style: none
+}
+
+.togglenavpart {
+    position: absolute;
+    width: 210px;
+    top: 0;
+    bottom: 0;
+    min-height: 420px;
+    border: 1px solid #eee;
+    z-index: 2
+}
+
+.togglenavico {
+    background: #edf0f1;
+    z-index: 3;
+    position: absolute;
+    border: #e5e5e5 1px solid;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    line-height: 32px;
+    width: 11px;
+    text-align: center;
+}
+
+.togglenavico:hover {
+    background: #eee;
+}
+
+.navtitle {
+    background: #edf0f1;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 33px;
+    color: #333;
+    padding: 0 5px;
+    margin-bottom: 4px;
+    white-space: nowrap
+}
+
+.togglenavpart .navbody {
+    padding: 0 4px 5px;
+}
+
+.togglenavpart .treeLeftbox {
+    padding: 0;
+    margin-top: -15px;
+}
+
+.togglenavpart .treeLeftbox ul.ztree {
+    border: none;
+    height: 421px;
+    overflow: auto
+}
+
+.togglebox .togglenavpart {
+    left: -230px;
+    overflow: auto
+}
+
+.togglebox .tinyheaderTools {
+    margin-left: 15px
+}
+
+.togglebox.open .tinyheaderTools {
+    margin-left: 0
+}
+
+.togglebox.open .togglenavpart {
+    display: block;
+    left: 0;
+}
+
+.togglebox.open .togglebodypart {
+    margin-left: 220px;
+}
+
+.togglebox.open .togglenavico {
+    left: 199px;
+}
+
+/*与面变化 位置方式变动*/
+/*.togglebox.shrinkage .togglenavico{left:-11px;width:10px;top:0}
+.togglebox.open.shrinkage .togglenavico{left:200px;}*/
+.togglebox.shrinkage .togglenavico {
+    left: 100%;
+    margin-left: 2px;
+    width: 11px;
+    top: 0
+}
+
+.togglebox.open.shrinkage .togglenavpart {
+    left: 100%;
+    margin-left: -210px;
+}
+
+.togglebox.open.shrinkage .togglenavico {
+    left: 100%;
+    margin-left: -11px;
+}
+
+.togglebox.open.shrinkage .togglebodypart {
+    margin-left: 0;
+    margin-right: 220px;
+}
+
+.togglebox.shrinkage .togglenavpart {
+    left: 100%;
+    margin-left: 12px;
+}

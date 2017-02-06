@@ -1,0 +1,31 @@
+.main_image {
+	margin: 0px auto; width: 100%; overflow: hidden; border-top-color: rgb(215, 215, 215); border-top-width: 1px; border-top-style: solid; position: relative;
+}
+.main_image ul {
+	left: 0px; top: 0px; width: 9999px;  overflow: hidden; position: absolute;
+}
+.main_image li {
+	width: 100%; float: left;
+}
+.main_image li span,.main_image li a {
+	width: 100%; display: block;
+}
+
+div.flicking_con {
+	margin: 0px auto; width: 990px; position: relative;
+}
+div.flicking_con .flicking_inner {
+	left:40%; top:-58px; width: 300px; height: 21px; position: absolute; z-index: 999;
+}
+div.flicking_con a {
+	margin: 0px; padding: 0px; width: 21px; height: 21px; text-indent: -1000px; float: left; display: block;
+}
+div.flicking_con a.on {
+	background-position: 0px -21px;
+}
+#btn_prev {
+	top: 50%; width: 73px !important; height: 74px !important; margin-top: -37px; display: none; position: absolute; z-index: 11111;
+}
+#btn_next {
+	top: 50%; width: 73px !important; height: 74px !important; margin-top: -37px; display: none; position: absolute; z-index: 11111;
+}
