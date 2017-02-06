@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.czx.common.web.BaseController;
 
 @Controller
-@RequestMapping(value = "test/")
-public class TestController{
+@RequestMapping(value = "${adminPath}/test/")
+public class TestController extends BaseController{
 
 	@RequestMapping(value = "ajaxPage")
 	public Object ajaxTestPage(){
